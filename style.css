@@ -9,6 +9,23 @@
 body {
     font-family:'chakra petch', sans-serif;
     color: var(--cor-principal);
+    background-color: #1b2838;
+    font-family: 'Chinese Rocks';
+    background-image: url(./img/image\ copy.png);
+    backdrop-filter: blur(5px);
+}
+
+.arthur {
+    transition: transform 0.3s ease-out;
+}
+
+.arthur:hover {
+    transform: scale(1.2);
+}
+
+@font-face {
+    font-family: 'Chinese Rocks';
+    src: url("./chinese\ rocks\ rg.otf") format("opentype");
 }
 
 h1, h2, h5 {
@@ -18,7 +35,8 @@ h1, h2, h5 {
 
 .lead, .btn-link {
     color: var(--cor-destaque);
-    font-weight: 700;
+    transform: transform 0.3s ease-in-out;
+    filter: drop-shadow(0 0 0.75rem rgb(98, 94, 95));
 }
 
 a, .btn-link:hover {
