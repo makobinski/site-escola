@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=chakra+petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --cor-principal: #f17014;
+    --cor-secundaria: #e10909;
+    --cor-destaque: #e10909;
+}
+
+body {
+    font-family:'chakra petch', sans-serif;
+    color: var(--cor-principal);
+    background-color: #1b2838;
+    font-family: 'Chinese Rocks';
+    background-image: url('./img/forest.png');
+    backdrop-filter: blur(20px);
+
+}
+.personagem-nome{
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.arthur {
+    transition: transform 0.3s ease-out;
+    border-radius: 5%;
+
+}
+.personagens{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.personagens-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.personagens-item {
+    border-radius: 5%;
+    background-color: #981616;
+    margin: 20px;
+    padding: 30px;
+
+
+}
+
+
+.lead:hover{
+    color:#f17014;
+}
+
+.arthur:hover {
+    transform: scale(1.1);
+}
+
+.badge{
+    font-size: 20px;
+}
+@font-face {
+    font-family: 'Chinese Rocks';
+    src: url("./chinese\ rocks\ rg.otf") format("opentype");
+}
+
+h1, h2, h5 {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+.lead, .btn-link {
+    color: var(--cor-destaque);
+    font-weight: 700;
+}
+
+a, .btn-link:hover {
+    color: var(--cor-principal)
+}
+
+a:hover{
+    color: var(--cor-destaque);
+}
+
+
